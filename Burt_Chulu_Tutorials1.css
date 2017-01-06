@@ -1,0 +1,12 @@
+body {width: 100%; min-width: 1000px;height: auto;
+	 background-color: white;
+ }
+ p{font-size:14px;color: purple;}
+ ol{font-size: 14px;color: blue;}
+ table{background-color: white; width:100%;}
+ h2{color: red;}
+ h3{color: purple;}
+ input{background-color: grey;
+ font-size: 16px;color: purple}
+ 
+ a{font-size:22px;color:red;text-decoration: none;}
