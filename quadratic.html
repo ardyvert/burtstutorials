@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+ <head>
+	 <title>Quadratic functions and equations.</title>
+	 <meta charset="UTF-8"/>
+	 <link rel="stylesheet" href="Burt_Chulu_Tutorials1.css" type="text/css"/>
+	 <script lang="Javascript 1.2" src="quadcalculator.js"></script>
+ </head>
+	 <body>
+	 <h1>Algebra.</h1>
+	 <h2>Quadratic Expressions.</h2>
+	 <p>
+	 A quadratic expression is in x is an expression in which 2 is the highest power of x eg x²+9x+14.<br><br>
+	 </p>
+<h2>Factorising Quadratic expressions.</h2>
+<p>
+Example.<br>
+Factorise a²-17a+42.<br><br>
+Find two numbers such that their product is 42 and if you add them they give -17.<br>
+The numbers are -14 and -3.<br>
+Substitute these for -17 in the quadratic expression.<br>
+  a²-17a+42<br>
+=a²-14a-3a+42<br>
+=a(a-14)-3(a-14)<br>
+=(a-14)(a-3)<br><br>
+Example.<br>
+Factorise z²-3z+2<br><br>
+z²-3z+2<br>
+z²-z-2z+2<br>
+z(z-1)-2(z-1)<br>
+(z-1)(z-2).<br><br>
+Example.<br>
+Factorise 2x²+7x-15<br><br>
+find two numbers whose product is 2×-15=-30 and whose sum is 7<br>
+The numbers are 10 and -3<br>
+2x²+10x-3x-15<br>
+2x(x+5)-3(x+5)<br>
+(x+5)(2x-3)<br><br>
+
+	 </p>
+	 <table>
+	 <td>
+	 <h2>Quadratic Calculator.</h2>
+	<p>
+	Use this calculator to calculate solutions to quadratic equations.<br>
+	Use this calculator to confirm if your solutions are correct.<br>
+	To get solutions enter the coefficients of x²,x and the constant c in the fields given and click.<br><br>
+a:
+<input type="text" id="demo1"><br>
+b:
+<input type="text" id="demo2"><br>
+c:
+<input type="text" id="demo3"><br>
+<button type="button" onClick="quadratic();">Click</button>
+</p>
+</td>
+</table>
+<h2>Quadratic Equations.</h2>
+<p>
+If the product of two numbers is zero then either of the numbers (or both )is zero.<br>
+If a×b=0,then either,a=0 or b=0.<br>
+Possibly both a and b=0.<br><br>
+If (x+3)(x-1)=0 then either<br>
+x+3=0 or x-1=0.<br>
+x=-3 or x=1.<br><br>
+Example.<br>
+Solve the equation 4x²+5x-21=0.<br><br>
+4x²+5x-21=0<br>
+4x²+12x-7x-21=0<br>
+4x(x+3)-7(x+3)=0<br>
+(x+3)(4x-7)=0<br>
+x+3=0 or 4x-7=0<br>
+x=3 or 4x=7<br>
+x=3 or x=7/4<br>
+x=3 or 1.75<br><br>
+Example.<br>
+Solve the equation 2x²=3x+5<br><br>
+2x²=3x+5<br>
+2x²-3x-5=0<br>
+2x²+2x-5x-5=0<br>
+2x(x+1)-5(x+1)=0<br>
+(x+1)(2x-5)=0<br>
+x+1=0 or 2x-5=0<br>
+x=-1 or 2x=5<br>
+x=-1 or x=5/2<br>
+x=-1 or x=2.5<br><br>
+</p>
+<h2>
+Completing the square.</h2>
+<p>
+If a quadratic equation cannot be factorised it can be solved by completing the square.<br><br>
+What must be added to x²+8x to make it a perfect square?<br>
+Lets add k such that we have x²+8x+k.<br>
+Let x²+8x+k=(x+a)²<br>
+x²+8x+k=x²+2ax+a²<br>
+
+Comparing coefficients of x <br>
+2a=8<br>
+a=4<br>
+Comparing constants<br>
+k=a²<br>
+k=4²<br>
+k=16<br>
+Therefore 16 must be added to x²+4x to make it a perfect square i.e<br>
+x²+4x+16=(x+4)²<br><br>
+In practise the quantity to be added is the SQUARE OF HALF THE COEFFICIENT OF X.<br><br>
+Example <br>
+Solve the equation x²-8x+3=0.<br><br>
+The quadratic expression does not factorise so we rearrange the equation and the left side is made a perfect square <br>
+x²-8x=-3<br>
+Add (8/2)² to both sides.<br>
+x²-8x+(8/2)²=-3+(8/2)²<br>
+x²-8x+16=16-3<br>
+(x-4)²=13<br>
+x-4=√13<br>
+x=4+√13 or x=4-√13.<br>
+x=7.6 or 0.4<br><br>
+Example.<br>
+Solve x²-7x+10=0<br><br>
+x²-7x+10=0<br>
+x²-7x=-10<br>
+x²-7x+(7/2)²=-10+(7/2)²<br>
+(x-7/2)²=49/4-10<br>
+(x-7/2)²=9/4<br>
+x-7/2=+-3/2<br>
+x=7/2+-3/2<br>
+x=5 or 2.<br><br>
+</p>
+<h3>Exercise.</h3>
+<p>
+Solve the following equations.<br>
+1.y²-5y+1=0.<br>
+2.m²-7m+11=0.<br>
+3.x²-4x-2=0.<br>
+</p>
+<table>
+<tr>
+<td>Copyright
+©2016 Burt Chulu Tutorials </td>
+</tr>
+</table>
+	 </body>
+ </html>

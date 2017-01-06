@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ <head>
+	 <title>Numbers,rounding off,significant figures.</title>
+	 <meta charset="UTF-8"/>
+	 <link rel="stylesheet" href="Burt_Chulu_Tutorials1.css" type="text/css"/>
+	 <script lang="Javascript 1.2" src="roundoff.js"></script>
+ </head>
+	 <body>
+	 <h2>Rounding off.</h2>
+	 <p>
+	 To round off a number to a certain number of decimal places check the digit just after the required decimal places.If its 5 and above round off to the next highest digit i.e<br>
+	 Example.<br>
+	 Round off 34.46821correct to 2 decimal places.<br><br>
+	 We round off at 6.Just after 6 is 8 which is greater than 5.Hence 6 is rounded off to the next highest digit which is 7 i.e<br>
+	 34.46821=34.47 to 2 dp.<br><br>
+	 If the digit just after the required decimal places is less than 5 the digit at the required decimal place stays the same.<br>
+	 Example.<br>
+	 Round off 5.12731 correct to 3 decimal places.<br>
+	 We round off at 7.The digit after 7 is 3 which is less than 5 hence 7 remains unchanged.<br>
+	 5.12731=5.127 to 3 dp.<br><br>
+	 Use the calculator below to practice rounding off.<br>
+	 Round off the following numbers using the calculator:<br>
+	 56.7653 to 1 dp.<br>
+	 23.1453147 to 2 dp.<br>
+	 2.2354678 to 3 dp.<br>
+	 4.078934 to 4 dp.<br>
+	 </p>
+	 <table>
+	 <tr>
+	 <td>
+	 
+	 <h2>Rounding off Calculator</h2>
+	 <p>
+	 In field x enter the number to be rounded off.<br>
+	 In field y enter the number of decimal places required.<br>
+	 x:
+	 <input type="text" id="demo1"><br>
+	 y:
+	 <input type="text" id="demo2"><br>
+	 <button type="button" onClick="roundoff();">Click</button>
+</p>
+</td>
+	 </tr>
+	 </table>
+	 <table>
+	 <tr>
+	 <td>
+	 <h2>Significant figure calculator.</h2>
+	 <p>
+	 In field x enter the number to be estimated.<br>In field y enter the number of significant figures required.<br>
+	 x:
+	 <input type="text" id="demo3"><br>
+	 y:
+	 <input type="text" id="demo4"><br>
+	 <button type="button" onClick="significant();">Click</button
+	 </p>
+	 </td>
+	 </tr>
+	 </table>
+	 </body>
+	 <footer>
+	 Copyright©2016 Burt Chulu Tutorials.
+	 </footer>
+ </html>
