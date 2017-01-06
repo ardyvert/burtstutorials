@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+ <head>
+	 <title>O level Maths Number bases.</title>
+	 <meta charset="UTF-8"/>
+	 <link rel="stylesheet" href="Burt_Chulu_Tutorials1.css"/>
+	 <script src="bases.js"></script>
+ </head>
+	 <body>
+	 <H1>Number bases.</h1>
+	 <h2>Denary base.</h2>
+	 <p>
+	 The every day numbers that we use are in base 10.Other bases exist such as base 2,3,4,5,6,7,8,9.<br><br>
+	 A number base system has digits one less than the base number itself. Base ten system has digits namely 0,1,2,3,4,5,6,7,8,9.<br><br>
+	 The base five system has digits 0,1,2,3,4.The digits for each base go from zero up to one less than the base number.<br><br>
+	 </p>
+	 <h2>Converting from base 10.</h2>
+<p>
+To convert from base ten to other bases divide the base ten number and the answers of the division successively writing down the remainder each time.<br>
+Read the remainder upwards to get the converted number.<br><br>
+Example.<br>
+Convert 37(base 10) to base 2.<br><br>
+2|37<br>
+2|18 rem 1<br>
+2|9   rem 0<br>
+2|4   rem 1<br>
+2|2   rem 0<br>
+2|1   rem 0<br>
+*|0   rem  1<br>
+Hence 37(ten)=100101(base 2)<br><br>
+Example.<br>
+Convert 75 base ten to base 5.<br><br>
+5|75<br>
+5|15 rem 0<br>
+5|  3 rem 0<br>
+*|   0 rem 3<br>
+75(base 10)=300(base 5).<br><br>
+Example.<br>
+Convert 64 base 10 to base 3.<br><br>
+3|64<br>
+3|21 rem 1<br>
+3|  7 rem  0<br>
+3|  2 rem  1<br>
+*|   0 rem 2<br>
+64(base10)=2101(base 3).<br><br>
+
+</p>
+	
+	<table>
+	<tr>
+	<td>
+<h3>Number base converter.Convert from base 10.</h3>
+	<p>
+	Enter base 10 number in field x.<br>
+	Enter base to convert to in field y and click convert.<br>
+	x:
+	<input type="text" id="demo1" ><br>
+	y:
+	<input type="text" id="demo2"><br>
+	<button type="button" onClick="bases();"><p>Convert</p></button>
+	</p>
+	</tr>
+	</table>
+<h2>Converting to base 10.</h2>
+<p>
+To convert to base ten from other bases expand the given number.<br>
+To expand start with the leftmost digit multiply it by unit or the base to the power zero,then multiply the next digit by the base to the power 1, then the next digit by the power to the power 2 and so on.<br><br>
+Example.<br>
+Convert 1101(base 2) to base 10.<br><br>
+1101(b2)=1x2³+1x2²+0x2¹+1x1<br>
+                 =8+4+0+1<br>
+                 =13(b10).<br><br>
+ Example.<br><br>
+ Convert 4325 base 6 to baee 10.<br><br>
+ 4325(b6)=4x6³+3x6²+2x6¹+5x1<br>
+                  =864+108+12+5<br>
+                  =989(b10).<br><br>
+Example.<br>
+Convert 11101 base 2 to base 10.<br><br>
+11101(b2)=1x2⁴+1x2³+1x2²+0x2¹+1x1<br>
+=16+8+4+0+1<br>
+=29(b10).<br><br>
+</p>
+	
+	<table>
+	<tr>
+	<td>
+<h3>Number base converter.Convert to base 10.</h3>
+	<p>
+First	enter the  base of the number in  Nbase field.<br>
+Then enter the digits of the number to be converted in the digits<br> fields below and click convert <br>
+	This converter will only work with numbers with a maximum of up to 6 digits.<br>
+	digit      1:
+	<input type="text" id="d1" oninput="check();"><br>
+	digit      2:
+	<input type="text" id="d2" oninput="check();"><br>
+	digit      3:
+	<input type="text" id="d3" oninput="check();"><br>
+	digit      4:
+	<input type="text" id="d4" oninput="check();"><br>
+	digit      5:
+	<input type="text" id="d5" oninput="check();"><br>
+	digit      6:
+	<input type="text" id="d6" oninput="check();"><br>
+	Nbase:
+	<input type="text" id="demo4" oninput="check();"><br>
+	<button type="button" onClick="base10();"><p>Convert</p></button>
+	</p>
+	</td>
+	</tr>
+	</table>
+<h2>Converting from one base to another.</h2>
+<p>
+To convert from one base to another first convert to base 10,then convert to the other base.<br><br>
+Example.<br>
+Convert 122 base 3 to base 7.<br><br>
+122(b3)=1x3²+2x3¹+2x1<br>
+=9+6+2<br>
+=17(b10)<br><br>
+7|17<br>
+7|  2 rem 3<br>
+*|   0 rem 2<br>
+Hence 122(b3)=23(b7).<br><br>
+Use the converter below to practice number base conversion.<br>
+Convert the following:<br>
+1111(b2) to base 5.<br>
+2111 (b3) to base 6.<br>
+4321(b5) to baee 7.<br>
+</p>
+	<table>
+	<tr>
+	<td>
+	<h3>Number base converter.Convert from one base to another.</h3>
+	<p>
+First	enter  the original base in Obase field and the final base in Nbase field .<br>
+Then enter the digits of the number to be converted in the fields below and click convert.<br>
+	Converter only works with numbers with up to 6 digits.<br>
+	digit 1:
+	<input type="text" id="b1" oninput="check1();"><br>
+	digit 2:
+	<input type="text" id="b2" oninput="check1();"><br>
+	digit 3:
+	<input type="text" id="b3" oninput="check1();"><br>
+	digit 4:
+	<input type="text" id="b4" oninput="check1();"><br>
+	digit 5:
+	<input type="text" id="b5" oninput="check1();"><br>
+	digit 6:
+	<input type="text" id="b6" oninput="check1();"><br>
+	Obase:
+	<input type="text" id="demo5" oninput="check1();"><br>
+	Nbase:
+	<input type="text" id="demo6" oninput="check1();"><br>
+	<button type="button" onClick="basechange();">Convert</button>
+	</p>
+	</td>
+	</tr>
+	</table>
+
+<table>
+<tr>
+<td>Copyright©2016 Burt Chulu Tutorials.
+</td>
+</tr>
+</table>
+	 </body>
+ </html>
